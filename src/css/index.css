@@ -1,3 +1,5 @@
+@import url("./normalize.css");
+
 body {
   margin: 0;
   padding: 0;
@@ -5,4 +7,72 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+h2 {
+  background-color: pink;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user {
+  width: 100%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  vertical-align: baseline;
+  display: flex;
+  padding-left: 5vw;
+  border-bottom: 1px solid #666;
+}
+
+.user:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.user:hover img {
+  -webkit-box-shadow: 10px 10px 55px -26px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px -26px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 55px -26px rgba(0, 0, 0, 0.75);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.user-icon {
+  width: 2vh;
+}
+
+.user-icon img {
+  border-radius: 50%;
+  border: 2px solid #d87093;
+}
+
+.user-text {
+  margin-left: 7vh;
+  padding-top: 1vh;
+}
+
+.upload-time {
+  font-size: 0.85em;
+  padding-top: 1vh;
+  color: #555;
+}
+
+.stories-header {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 1.2em;
+  padding-left: 5vw;
+}
+
+h1 {
+  margin-left: 4vw;
 }
