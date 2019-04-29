@@ -8,7 +8,7 @@ class Section extends Component {
     const users = getUsers()
     return (
       <div>
-        <h2 class="stories-header">{status} Products</h2>
+        <h2 className="stories-header">{status} Products</h2>
         <ul>
           {users.map(user => (
             <User key={user} username={user} />

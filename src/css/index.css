@@ -8,10 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  overflow: hidden;
 }
 
 h2 {
-  background-color: pink;
+  background-color: #ffc0cb;
   width: 100%;
 }
 
@@ -52,7 +53,7 @@ a {
 
 .user-icon img {
   border-radius: 50%;
-  border: 2px solid #d87093;
+  border: 2px solid #ffc0cb;
 }
 
 .user-text {
@@ -75,4 +76,33 @@ a {
 
 h1 {
   margin-left: 4vw;
+}
+
+.story {
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.story-image {
+  height: 100vh;
+  width: 100vw;
+}
+
+.story-header {
+  color: #fff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  padding-top: 2vh;
+  margin-left: 3vw;
+}
+
+.story-username {
+  margin-left: 2vw;
+  font-size: 1.2em;
+}
+
+.story-time {
+  color: #aaa;
+  margin-left: 2vw;
+  font-size: 0.9em;
 }

@@ -6,17 +6,17 @@ class User extends Component {
     const { username } = this.props
     return (
       <Link to={`/stories/${username}`}>
-        <li class="user">
-          <div class="user-icon">
+        <li className="user">
+          <div className="user-icon">
             <img
               src="https://avatars0.githubusercontent.com/u/25001871?s=460&v=4"
               alt=""
               width="50px"
             />
           </div>
-          <div class="user-text">
+          <div className="user-text">
             <div>{username}</div>
-            <div class="upload-time">3 hours ago</div>
+            <div className="upload-time">3 hours ago</div>
           </div>
         </li>
       </Link>
