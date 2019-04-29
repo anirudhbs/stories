@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react"
 import { Link } from "react-router-dom"
 
+import SeeMore from "./SeeMore"
+
 export default class Story extends Component {
   constructor() {
     super()
@@ -8,12 +10,21 @@ export default class Story extends Component {
       showSeeMore: false
     }
     this.toggleSeeMore = this.toggleSeeMore.bind(this)
+    this.nextStory = this.nextStory.bind(this)
   }
 
-  toggleSeeMore() {
+  toggleSeeMore(e) {
+    e.stopPropagation()
     this.setState({
       showSeeMore: !this.state.showSeeMore
     })
+  }
+
+  nextStory() {
+    this.setState({
+      showSeeMore: false
+    })
+    this.props.next()
   }
 
   render() {
@@ -34,7 +45,7 @@ export default class Story extends Component {
 
     return (
       <Fragment>
-        <div className="story" style={storyStyle}>
+        <div className="story" style={storyStyle} onClick={this.nextStory}>
           <div className="story-header">
             <span>
               <Link to="/">Back</Link>
@@ -50,7 +61,7 @@ export default class Story extends Component {
             <div>See more</div>
           </div>
           <div className="see-more-details" style={seeMoreDetailsStyle}>
-            hello world
+            <SeeMore />
           </div>
         </div>
       </Fragment>
