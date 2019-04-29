@@ -10,7 +10,7 @@ class User extends Component {
           <div className="user-icon">
             <img
               src="https://avatars0.githubusercontent.com/u/25001871?s=460&v=4"
-              alt=""
+              alt="user avatar"
               width="50px"
             />
           </div>

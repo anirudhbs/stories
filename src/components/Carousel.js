@@ -5,6 +5,8 @@ import Story from "./Story"
 
 class SimpleSlider extends Component {
   render() {
+    const { username } = this.props
+
     const settings = {
       speed: 500,
       slidesToShow: 1,
@@ -20,7 +22,7 @@ class SimpleSlider extends Component {
       <Slider {...settings}>
         {[1, 2, 3].map(cur => (
           <div key={cur}>
-            <Story />
+            <Story username={username} />
           </div>
         ))}
       </Slider>

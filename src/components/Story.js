@@ -17,13 +17,16 @@ export default class Story extends Component {
   }
 
   render() {
+    const { username } = this.props
     const { showSeeMore } = this.state
     const background = "https://picsum.photos/id/452/1080/1920"
     const storyStyle = {
       backgroundImage: `url(${background})`
     }
 
-    const seeMoreContainerStyle = { top: showSeeMore ? "27vh" : "90vh" }
+    const seeMoreContainerStyle = {
+      top: showSeeMore ? "27vh" : "90vh"
+    }
 
     const seeMoreDetailsStyle = {
       top: showSeeMore ? "35vh" : "100vh"
@@ -36,8 +39,8 @@ export default class Story extends Component {
             <span>
               <Link to="/">Back</Link>
             </span>
-            <span className="story-username">Anirudh B S</span>
-            <span className="story-time">7 hours ago</span>
+            <span className="story-username">{username}</span>
+            <span className="story-time">3 hours ago</span>
           </div>
           <div
             className="see-more-container"
