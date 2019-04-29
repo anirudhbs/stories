@@ -11,6 +11,10 @@ body {
   overflow: hidden;
 }
 
+* {
+  overflow: hidden;
+}
+
 h2 {
   background-color: #ffc0cb;
   width: 100%;
@@ -48,7 +52,7 @@ a {
 }
 
 .user-icon {
-  width: 2vh;
+  width: 8vh;
 }
 
 .user-icon img {
@@ -57,7 +61,7 @@ a {
 }
 
 .user-text {
-  margin-left: 7vh;
+  margin-left: 2vw;
   padding-top: 1vh;
 }
 
@@ -105,4 +109,23 @@ h1 {
   color: #aaa;
   margin-left: 2vw;
   font-size: 0.9em;
+  display: block;
+  margin-left: 3em;
+}
+
+.see-more-container {
+  color: #fff;
+  top: 90vh;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+}
+
+.see-more-details {
+  width: 92vw;
+  background-color: #fff;
+  margin-top: 50%;
+  border-radius: 5%;
+  height: 70vh;
+  padding: 1em;
 }

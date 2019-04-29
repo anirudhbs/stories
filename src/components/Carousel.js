@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import Slider, { slickPlay } from "react-slick"
-import { Link } from "react-router-dom"
+import Slider from "react-slick"
+
+import Story from "./Story"
 
 class SimpleSlider extends Component {
   render() {
@@ -14,24 +15,12 @@ class SimpleSlider extends Component {
       infinite: false
       // autoplay: true
     }
-    const background = "https://picsum.photos/id/452/1080/1920"
-    const storyStyle = {
-      backgroundImage: `url(${background})`
-    }
 
     return (
       <Slider {...settings}>
         {[1, 2, 3].map(cur => (
           <div key={cur}>
-            <div className="story" style={storyStyle} onClick={slickPlay}>
-              <div className="story-header">
-                <span>
-                  <Link to="/">Back</Link>
-                </span>
-                <span className="story-username">Anirudh B S</span>
-                <span className="story-time">7 hours ago</span>
-              </div>
-            </div>
+            <Story />
           </div>
         ))}
       </Slider>

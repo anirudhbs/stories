@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import Section from "./Section"
 
-function Home() {
+export default function Home() {
   const status = ["Seen", "Unseen"]
   return (
     <Fragment>
@@ -12,5 +12,3 @@ function Home() {
     </Fragment>
   )
 }
-
-export default Home
