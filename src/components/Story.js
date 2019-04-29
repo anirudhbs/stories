@@ -23,6 +23,12 @@ export default class Story extends Component {
       backgroundImage: `url(${background})`
     }
 
+    const seeMoreContainerStyle = { top: showSeeMore ? "27vh" : "90vh" }
+
+    const seeMoreDetailsStyle = {
+      top: showSeeMore ? "35vh" : "100vh"
+    }
+
     return (
       <Fragment>
         <div className="story" style={storyStyle}>
@@ -36,11 +42,13 @@ export default class Story extends Component {
           <div
             className="see-more-container"
             onClick={this.toggleSeeMore}
-            style={{ top: showSeeMore ? "27vh" : "90vh" }}
+            style={seeMoreContainerStyle}
           >
             <div>See more</div>
           </div>
-          {showSeeMore && <div className="see-more-details">hello world</div>}
+          <div className="see-more-details" style={seeMoreDetailsStyle}>
+            hello world
+          </div>
         </div>
       </Fragment>
     )

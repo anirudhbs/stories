@@ -119,13 +119,16 @@ h1 {
   position: absolute;
   text-align: center;
   width: 100vw;
+  transition: 0.5s;
 }
 
 .see-more-details {
+  position: absolute;
   width: 92vw;
   background-color: #fff;
-  margin-top: 50%;
+  top: 35vh;
   border-radius: 5%;
   height: 70vh;
   padding: 1em;
+  transition: 0.5s;
 }
